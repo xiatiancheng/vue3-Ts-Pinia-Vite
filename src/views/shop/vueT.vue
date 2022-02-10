@@ -13,6 +13,8 @@
 <script lang="ts" setup>
     import { reactive, ref, toRefs, computed, watch } from "vue";
     import { useRoute, useRouter } from "vue-router";
+
+
     // 必须先声明调用
     const route = useRoute();
     const router = useRouter();
@@ -29,8 +31,13 @@
     name.value = "夏天1111";
 
 
+    interface Data {
+      name: string,
+      sex: string,
+      age:number
+    }  
     // 2.reactive声明响应式数据，用于声明引用数据类型
-    const state = reactive({
+    const state:Data = reactive({
       name: "夏天1111",
       sex: "男",
       age: 20,
