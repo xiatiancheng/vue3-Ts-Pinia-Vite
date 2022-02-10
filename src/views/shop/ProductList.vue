@@ -4,21 +4,12 @@
       <span>我是默认插槽</span>
       <template #title>
         <h1>我是具名插槽</h1>
-        <h1>我是具名插槽</h1>
-        <h1>我是具名插槽</h1>
       </template>
       <template #footer="{ scope }">
         <footer>作用域插槽——姓名：{{ scope.name }}，年龄{{ scope.age }}</footer>
       </template>
     </cardItem>
   </div>
-  
-  <!-- <ul>
-    <li v-for="item in productsStore.all" :key="item.id">
-      {{ item.title }} - {{ item.price }}￥ - 库存{{ item.inventory }}<br />
-      <button @click="cartStore.addProductToCart(item)" :disabled="!item.inventory">添加到购物车</button>
-    </li>
-  </ul> -->
 </template>
 
 <script setup lang="ts">

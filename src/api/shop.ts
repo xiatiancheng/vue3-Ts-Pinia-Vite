@@ -6,9 +6,9 @@ export interface IProduct {
   }
   
   const _products: IProduct[] = [
-    { id: 1, title: "苹果12", price: 600, inventory: 3 },
-    { id: 2, title: "小米13", price: 300, inventory: 5 },
-    { id: 3, title: "魅族12", price: 200, inventory: 6 },
+    { id: 1, title: "苹果13", price: 6999, inventory: 3 },
+    { id: 2, title: "小米12", price: 5990, inventory: 5 },
+    { id: 3, title: "魅族12", price: 5399, inventory: 6 },
   ];
   
   // 获取商品列表
