@@ -11,6 +11,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 .app{
   padding: 20px;
 }

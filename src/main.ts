@@ -7,8 +7,13 @@ import router from "@/router/index";
 
 import Antd from "ant-design-vue";
 import "ant-design-vue/dist/antd.css";
-createApp(App).use(EBComponent)
-  .use(createPinia().use(piniaPluginPersist))
+
+
+const app = createApp(App);
+  app.use(EBComponent,{
+      components:["ebButton"]//这里传入的是组件的name值
+  })
+  app.use(createPinia().use(piniaPluginPersist))
   .use(Antd)
   .use(router)
   .mount("#app");

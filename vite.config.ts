@@ -18,6 +18,15 @@ export default defineConfig({
         'styles': resolve('src/styles')
       }
     },
+    css: {
+      // css预处理器
+      preprocessorOptions: {
+        scss: {
+          charset: false,
+          additionalData: '@import "@/assets/style/variables.scss";',
+        },
+      },
+    },
     build: {
       target: 'modules',
       outDir: 'dist',
