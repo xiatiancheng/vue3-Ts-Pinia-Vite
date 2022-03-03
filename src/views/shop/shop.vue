@@ -1,6 +1,7 @@
 
 <template>
   <div class="item">
+    <ebButton>11111111</ebButton>
     <h1>Pinia - 购物车示例</h1>
     <hr />
     <h2>商品列表</h2>
