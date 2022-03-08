@@ -1,12 +1,20 @@
 import { defineConfig } from "vite";
 import path from "path";
 import vue from '@vitejs/plugin-vue';
-
+import VueSetupExtend from 'vite-plugin-vue-setup-extend'
+import AutoImport from 'unplugin-auto-import/vite'
 const resolve = (dir: string) => path.join(__dirname, dir)
 
 export default defineConfig({
     base: "",
-    plugins: [vue()],
+    plugins: [
+      vue(),
+      VueSetupExtend(),
+      AutoImport({
+        // 可以自定义文件生成的位置，默认是根目录下，使用ts的建议放src目录下
+       dts: 'src/auto-imports.d.ts',
+       imports: ['vue']
+     })],
     resolve: {
       alias: {
         '@': resolve('src'),

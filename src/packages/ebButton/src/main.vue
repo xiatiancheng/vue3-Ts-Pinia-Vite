@@ -8,12 +8,8 @@
   </button>
 </template>
 
-<script lang="ts">
-export default {
-  name: "ebButton",
-};
-</script>
-<script setup lang="ts">
+
+<script setup lang="ts"  name="ebButton">
 
 const props = defineProps({
   size: {

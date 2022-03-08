@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts" name="shopping">
     import { useCartStore } from "@/store/cart";
     const cartStore = useCartStore();
 </script>

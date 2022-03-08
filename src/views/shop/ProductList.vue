@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
   import cardItem from './card.vue'
-  import {nextTick,ref} from 'vue'
+  // import {nextTick,ref} from 'vue'  使用了 unplugin-auto-import 可以注释
   import { useProductsStore } from "@/store/products";
   const productsStore = useProductsStore();
   // 加载所有数据
