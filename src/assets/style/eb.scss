@@ -1,0 +1,461 @@
+/**
+ * 通用css样式布局处理
+ * Copyright (c) 2019 ruoyi
+ */
+
+/** 基础通用 **/
+.mar {
+  margin: 0;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mt15 {
+  margin-bottom: 15px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.ml0 {
+  margin-left: 10px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.m20 {
+  margin-left: 20px;
+}
+
+.m60 {
+  margin-left: 60px;
+}
+
+.el-dialog:not(.is-fullscreen) {
+  margin-top: 6vh !important;
+}
+
+.el-table {
+  .el-table__header-wrapper,
+  .el-table__fixed-header-wrapper {
+    th {
+      word-break: break-word;
+      background-color: #f8f8f9;
+      color: #515a6e;
+      height: 40px;
+      font-weight: 500;
+    }
+  }
+
+  .el-table__body-wrapper {
+    .el-button [class*="el-icon-"] + span {
+      margin-left: 1px;
+    }
+  }
+}
+
+/** 表单布局 **/
+.form-header {
+  font-size: 15px;
+  color: #6379bb;
+  border-bottom: 1px solid #ddd;
+  margin: 8px 10px 25px 10px;
+  padding-bottom: 5px;
+}
+
+/** 表格布局 **/
+.pagination-container {
+  position: relative;
+  height: 25px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding: 10px 20px !important;
+}
+
+/* tree border */
+.tree-border {
+  margin-top: 5px;
+  border: 1px solid #e5e6e7;
+  background: #ffffff none;
+  border-radius: 4px;
+}
+
+.pagination-container .el-pagination {
+  right: 0;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .pagination-container .el-pagination > .el-pagination__jump {
+    display: none !important;
+  }
+
+  .pagination-container .el-pagination > .el-pagination__sizes {
+    display: none !important;
+  }
+}
+
+.el-table .fixed-width .el-button--mini {
+  padding-left: 0;
+  padding-right: 0;
+  width: inherit;
+}
+
+.el-tree-node__content > .el-checkbox {
+  margin-right: 8px;
+}
+
+.list-group-striped > .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-group {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.list-group-item {
+  border-bottom: 1px solid #e7eaec;
+  border-top: 1px solid #e7eaec;
+  margin-bottom: -1px;
+  padding: 11px 0px;
+  font-size: 13px;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.el-card__header {
+  padding: 14px 15px 7px;
+  min-height: 40px;
+}
+
+.el-card__body {
+  padding: 15px 20px 20px 20px;
+}
+
+.card-box {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* button color */
+.el-button--cyan.is-active,
+.el-button--cyan:active {
+  background: #20b2aa;
+  border-color: #20b2aa;
+  color: #ffffff;
+}
+
+.el-button--cyan:focus,
+.el-button--cyan:hover {
+  background: #48d1cc;
+  border-color: #48d1cc;
+  color: #ffffff;
+}
+
+.el-button--cyan {
+  background-color: #20b2aa;
+  border-color: #20b2aa;
+  color: #ffffff;
+}
+
+/* text color */
+.text-navy {
+  color: #1ab394;
+}
+
+.text-primary {
+  color: inherit;
+}
+
+.text-success {
+  color: #1c84c6;
+}
+
+.text-info {
+  color: #23c6c8;
+}
+
+.text-warning {
+  color: #f8ac59;
+}
+
+.text-danger {
+  color: #ed5565;
+}
+
+.text-muted {
+  color: #888888;
+}
+
+/* image */
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-lg {
+  width: 120px;
+  height: 120px;
+}
+
+.avatar-upload-preview {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #ccc;
+  overflow: hidden;
+}
+
+/* 拖拽列样式 */
+.sortable-ghost {
+  opacity: 0.8;
+  color: #fff !important;
+  background: #42b983 !important;
+}
+
+.top-right-btn {
+  position: relative;
+  float: right;
+}
+
+.ghost_btn,
+.ghost_btn:hover,
+.ghost_btn:focus {
+  background-color: transparent;
+  color: $main_color;
+  border-color: $main_color;
+}
+
+.upload_tips {
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+}
+.upload_filename {
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* 状态 */
+._status_success,
+._status_warn,
+._status_error {
+  line-height: 20px;
+
+  &:before {
+    display: inline-block;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+}
+
+._status_disable {
+  &:before {
+    background: #eee;
+  }
+}
+._status_success {
+  &:before {
+    background: rgba(87, 171, 0, 1);
+  }
+}
+
+._status_warn {
+  &:before {
+    background: rgba(252, 173, 0, 1);
+  }
+}
+
+._status_error {
+  &:before {
+    background: rgba(196, 57, 57, 1);
+  }
+}
+
+._text_suc {
+  color: $green;
+}
+
+._text_fail {
+  color: $main_color;
+}
+
+// 表格头部的搜索样式
+.ebsearch {
+  display: flex;
+  width: 100%;
+
+  // 修改为flex布局 start
+  .el-form-item {
+    display: flex;
+  }
+
+  .el-form-item__label {
+    flex: 0;
+    white-space: nowrap;
+  }
+
+  .el-form-item__content {
+    flex: 1;
+  }
+
+  // 修改为flex布局 end
+  // 时间选择器关闭按钮尺寸调整
+  .el-range__close-icon {
+    width: 10px;
+  }
+
+  // 时间选择器前置图标为主题色
+  .el-icon-date {
+    color: $main_color;
+  }
+
+  // 输入控件的边框 圆角修改
+  .el-input__inner {
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  // 文字按钮颜色修改
+  .el-button--text {
+    color: $main_color;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .el-form-item__label {
+    padding: 0;
+  }
+}
+
+.right_wrap {
+  background-color: $bg_color;
+  border-radius: $border_radius_width;
+  padding: 20px;
+}
+
+.cus_scroll {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+.upload_one {
+  display: flex;
+  align-items: center;
+}
+
+.block {
+  width: 100% !important;
+}
+.inline_block {
+  display: inline-block;
+}
+// 图片预览 样式
+.el-image-viewer__wrapper {
+  z-index: 99999 !important;
+}
+.cus_disabled {
+  color: #bbb;
+}
+
+
+::-webkit-scrollbar-track-piece {
+  background: #F7F7F9;
+}
+
+::-webkit-scrollbar {
+  // display: none;
+  width: 4px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDE0E7;
+  border-radius: 20px;
+}

@@ -7,7 +7,7 @@ import router from "@/router/index";
 
 import Antd from "ant-design-vue";
 import "ant-design-vue/dist/antd.css";
-
+import "@/assets/style/eb.scss";
 
 const app = createApp(App);
   app.use(EBComponent,{

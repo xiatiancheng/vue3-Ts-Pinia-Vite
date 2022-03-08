@@ -13,3 +13,10 @@ npm i unplugin-auto-import -D
 
 npm i vue-global-api -D
 >在没有import的情况下使用会导致eslint提示报错，可以通过在eslintrc.js安装插件**vue-global-api**解决。
+
+// eslintrc.js
+module.exports = {
+  extends: [
+    'vue-global-api'
+  ]
+}

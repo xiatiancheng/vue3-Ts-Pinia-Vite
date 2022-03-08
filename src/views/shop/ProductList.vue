@@ -26,7 +26,7 @@
       inventory: number;
   }
   const updateList = (list: IProduct[]) => {
-      console.log(list)
+      // console.log(list)
       productsStore.all = list
   }  
 
@@ -34,7 +34,7 @@
   // 子组件ref
   // const childRef = ref('cardItemRef')
   const cardItemRef = ref();
-  console.log(cardItemRef,'111')
+  // console.log(cardItemRef,'111')
   // nextTick
   nextTick(() => {
     // 获取子组件name
