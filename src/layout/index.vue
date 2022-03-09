@@ -12,19 +12,11 @@
           v-model:openKeys="openKeys"
           :style="{ height: '100%', borderRight: 0 }"
         >
-          <a-sub-menu v-for="item in menus" :key="item.name">
-            <template #title>
-              <span>
-                <user-outlined />
-                {{ item.meta?.title }}
-              </span>
-            </template>
-            <a-menu-item
-              v-for="children in item.children"
-              :key="children.name"
-              >{{ children.meta?.title }}</a-menu-item
-            >
-          </a-sub-menu>
+        <template v-for="item in menus" :key="item.name">
+          <MyMenuItem :menu-info="item" />
+        </template>
+
+           
         </a-menu>
       </a-layout-sider>
       <div class="main-container">
@@ -36,9 +28,10 @@
   </a-layout>
 </template>
 <script lang="ts" setup>
+import MyMenuItem from "./components/menuItem.vue";
 import content from "./components/content.vue";
 import route from "@/router"
-import {UserOutlined} from "@ant-design/icons-vue";
+
 import { type RouteRecordName, useRoute, useRouter } from 'vue-router';
   const currentRoute = useRoute();
   const router = useRouter();
